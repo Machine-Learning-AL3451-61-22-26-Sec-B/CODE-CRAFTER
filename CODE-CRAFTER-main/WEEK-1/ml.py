@@ -4,14 +4,14 @@ import numpy as np
 import plotly.express as px
 
 # Load data from CSV
-@st.cache_data
+@st.cache_resource
 def load_data():
     return pd.read_csv('trainingdata.csv')
 
-# Function to implement the learning method of the Candidate elimination algorithm
+# Function to implement the learning method of the Candidate Elimination algorithm
 def learn(concepts, target):
     '''
-    learn() function implements the learning method of the Candidate elimination algorithm.
+    learn() function implements the learning method of the Candidate Elimination algorithm.
     Arguments:
         concepts - a data frame with all the features
         target - an array with corresponding output values
